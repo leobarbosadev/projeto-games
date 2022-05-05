@@ -1,0 +1,215 @@
+@charset "URF-8";
+
+@font-face {
+    font-family: 'letal';
+    src: url(fontes/lethal-injector\ bold.otf) format('opentype'), url(fontes/lethal-injector\ bold.ttf) format('truetype') ;
+}
+
+@font-face {
+    font-family: 'gamerock';
+    src: url(fontes/Gamerock.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'game';
+    src: url(fontes/AGOXES\ GAME.ttf) format('truetype');
+}
+
+:root{
+    --cor0: #020038;
+    --cor1: #000080;
+    --cor2: #0C0C93;
+    --cor4: #3C91F1;
+    --cor5: #C1E2F8;
+
+    --fonte-padrao: Arial, 'Verdana', Helvetica, sans-serif;
+    --fonte-destaque: 'gamerock', 'cursive';
+    --font-game: 'game', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor5);
+    font-family: var(--fonte-padrao);
+}
+
+img{
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+main img.pequena{
+    display: block;
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+    text-align: center;
+    min-height: 150px;
+    padding-top: 50px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
+}
+
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+nav{
+    background-color: var(--cor0);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.185);
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #3C91F1;
+}
+
+main{
+    min-width: 400px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+}
+
+main h1{
+    font-family: var(--font-game);
+    color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 10px;
+}
+
+main h2{
+    font-family: var(--font-game);
+    color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 10px;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 1.3em;
+
+}
+
+main strong{
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.estilo{
+    background-color: var(--cor5);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1em; 
+    margin: -10px -10px 0px -10px;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+aside  ul{
+    list-style-type: '⚔️\00A0\00A0';
+    list-style-position: inside;
+    font-weight: bold;
+    text-align: justify;
+}
+
+li{
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#imagem{
+    float: left;
+    padding-right: 30px;
+}
+
+h3{
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    height: 55vh;
+
+}
+
+.conteudo{
+    position: absolute;
+    max-width: 100vh;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    
+
+}
