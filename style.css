@@ -71,6 +71,7 @@ header > p{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
 }
 
@@ -200,19 +201,3 @@ h3{
 iframe{
     width: 100%;
 }
-/*.container{
-    position: relative;
-    height: 55vh;
-
-}
-
-.conteudo{
-    position: absolute;
-    max-width: 100vh;
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-    
-
-}*/
