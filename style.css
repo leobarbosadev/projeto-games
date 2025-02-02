@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'letal';
-    src: url(fontes/lethal-injector\ bold.otf) format('opentype'), url(fontes/lethal-injector\ bold.ttf) format('truetype') ;
+    src: url(fontes/lethal-injector\ bold.otf) format('opentype'), url(fontes/lethal-injector\ bold.ttf) format('truetype');
 }
 
 @font-face {
@@ -15,7 +15,7 @@
     src: url(fontes/AGOXES\ GAME.ttf) format('truetype');
 }
 
-:root{
+:root {
     --cor0: #020038;
     --cor1: #000080;
     --cor2: #0C0C93;
@@ -27,34 +27,34 @@
     --font-game: 'game', Arial, Helvetica, sans-serif;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: var(--cor5);
     font-family: var(--fonte-padrao);
 }
 
-img{
+img {
     max-width: 100%;
     padding-top: 20px;
 }
 
-main img.pequena{
+main img.pequena {
     display: block;
     margin: auto;
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
     text-align: center;
     min-height: 150px;
     padding-top: 50px;
 }
 
-header > h1{
+header>h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 4em;
@@ -63,7 +63,7 @@ header > h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
 }
 
-header > p{
+header>p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
@@ -71,29 +71,28 @@ header > p{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
 }
 
-main a{
+main a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor0);
 }
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
 
-nav{
+nav {
     background-color: var(--cor0);
     padding: 10px;
     text-align: center;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.185);
 }
 
-nav > a{
+nav>a {
     color: white;
     text-decoration: none;
     text-align: center;
@@ -103,11 +102,11 @@ nav > a{
     transition-duration: 0.5s;
 }
 
-nav > a:hover{
+nav>a:hover {
     background-color: #3C91F1;
 }
 
-main{
+main {
     min-width: 300px;
     max-width: 1000px;
     background-color: white;
@@ -119,21 +118,21 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
 }
 
-main h1{
+main h1 {
     font-family: var(--font-game);
     color: var(--cor1);
     background-image: linear-gradient(to right, var(--cor4), transparent);
     text-indent: 10px;
 }
 
-main h2{
+main h2 {
     font-family: var(--font-game);
     color: var(--cor1);
     background-image: linear-gradient(to right, var(--cor4), transparent);
     text-indent: 10px;
 }
 
-main p{
+main p {
     text-align: justify;
     text-indent: 20px;
     padding: 10px;
@@ -142,23 +141,33 @@ main p{
 
 }
 
-main strong{
+main strong {
     color: var(--cor0);
     font-weight: bold;
 }
 
-.estilo{
+article {
+    margin: 10px;
+}
+
+.videos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.estilo {
     background-color: var(--cor5);
     border-radius: 5px;
     padding: 10px;
     margin-top: 20px;
 }
 
-aside > h3{
+aside>h3 {
     background-color: var(--cor4);
     color: white;
     font-family: var(--fonte-padrao);
-    font-size: 1em; 
+    font-size: 1em;
     margin: -10px -10px 0px -10px;
     text-align: center;
     padding: 5px;
@@ -167,37 +176,47 @@ aside > h3{
 
 }
 
-aside  ul{
+aside ul {
     list-style-type: '⚔️\00A0\00A0';
     list-style-position: inside;
     font-weight: bold;
     text-align: justify;
 }
 
-li{
+li {
     font-size: 1.3em;
     line-height: 2em;
 }
 
-footer{
+footer {
     background-color: var(--cor0);
     color: white;
     text-align: center;
     padding: 5px;
 }
 
-#imagem{
+#imagem {
     float: left;
     padding-right: 30px;
 }
 
-h3{
+h3 {
     color: var(--cor0);
     font-weight: bold;
     padding: 15px;
     text-align: center;
 }
 
-iframe{
-    width: 100%;
+/* table{
+    margin: auto;
 }
+th{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    color: var(--cor1);
+    padding: 5px;
+}
+
+tr > td#video{
+    padding-right: 20px;
+    padding-bottom: 20px;
+} */
